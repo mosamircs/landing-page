@@ -35,30 +35,6 @@ function navBarMake(){
 
 
         }
-        const outsideClickListener = event => {
-            const deltaX = event.offsetX - lastMouseDownX
-            const deltaY = event.offsetY - lastMouseDownY
-            const distSq = (deltaX * deltaX) + (deltaY * deltaY)
-            const isDrag = distSq > 3
-            const isDragException = isDrag && !lastMouseDownWasOutside
-    
-            if (!element.contains(event.target) && isVisible(element) && !isDragException) { // or use: event.target.closest(selector) === null
-              element.style.display = 'none'
-              removeClickListener()
-              document.removeEventListener('mousedown', mouseDownListener); // Or add this line to removeClickListener()
-            }
-        }
-
-        // nodesection=1;
-        // while (nodesection<5) {
-        //   var nodes=document.getElementById(`sec${section}`);
-        //   node.addEventListener("click",function(){
-        //     nodes.style.backgroundColor="black";
-        //   })
-        //
-        //   nodesection++;
-        // }
-
         section++;
     }
 
