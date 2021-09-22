@@ -33,23 +33,16 @@ function navBarMake(){
     } 
 }
 
-/**chooseActiveClass
- * focus on active class in viewport which you are in 
- */
-function viewPort(section){
-    let sectionPosition=section.getBoundingClientRect();
-    return (sectionPosition.top>=0);
-}
+
 //creates the nav bar
 navBarMake();
 //add class "active" to section when near to viewport
 document.addEventListener("scroll",document.querySelectorAll('section').forEach(section => {   
         //checks if the section in viewport and it d
-        if(viewPort(section)){
+        if(section.getBoundingClientRect().top>=0){
             if(!section.classList.contains('your-active-class')){
                 section.classList.add("your-active-class");
-            }else{
-                section.classList.remove("your-active-class");
+                
             }
 }
 }));
