@@ -26,3 +26,5 @@
     - Checking your page on small devices.
     - Adding the **README.md** file with some basic information like project description, instructions, technologies used, author's name. credits, ....etc.
     - Commenting on your code properly
+    //todo
+    //what i understand i have to add some animation and good styling and active for view port for every device support
