@@ -18,3 +18,4 @@
 - second you should have a web browser like chrome or firefox or any other one 
 - third open index.html  
 - and it works now.
+![alt text](https://github.com/mosamircs/landing-page/blob/master/active-state.gif?raw=true)
